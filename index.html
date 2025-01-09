@@ -2,40 +2,62 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>Project: Blog</title>
+        <title>Project: Event invite</title>
         <style>
-            h1{
-                color:rgb(204, 120, 145);
-            }
-            .header{
-                font-weight:bold;color:rgb(26, 133, 16);font-size:2em;
-            }
+        #invitePartOne{
+        color:rgb(39,4,128);margin-left:10px;
+        }
+        h2{
+            position:absolute;
+            right:134px;
+            bottom:337px;font-weight:bold;
+        }
+        #invitePartTwo{
+            float:right;
+        color:rgb(39, 4, 128);margin-right:10px;
+        }
+        h2{
+            text-align:center;
+            position:absolute;
+            top:87px;
+            margin:auto;width:40%;
+            text-align:center;z-index:20;
+        }
+        h3{
+            position:absolute;
+            top:248px;left:160px;
+            text-align:center;
+            margin:auto
+        }
+        h4{
+            position:absolute;
+            text-align:center;
+            margin:auto;font-style:italic;
+            top:308px;left:115px;margin-top:10px;
+        }
+        img{
+            z-index:1;margin:auto;width:15%;display:block;
+        }
+        #date{
+            color:rgb(230, 29, 23);
+        }
+        body {
+            border:2px dotted rgb(13, 6, 43);z-index:10;height:344px;padding:5px;
+        }
+            
         </style>
     </head>
     <body>
+    <div id="container"></div>
+    <img src="https://cdn.kastatic.org/third_party/javascript-khansrc/live-editor/build/images/creatures/Hopper-Cool.png">
         
-        <h1>Mike's blog</h1>
-        <img src="https://cdn.kastatic.org/third_party/javascript-khansrc/live-editor/build/images/avatars/mr-pants.png">
-
-        <h3 class="header">Contents</h3>
-        <ul>
-            <a href="#firstPost"><li>First post!</li></a>
-           <a href="#secondPost"> <li>Second  post!</li></a>
-            <a href="#thirdPost"><li>Third post!</li></a>
-        </ul>
+        <h1><span id="invitePartOne">You're</span> <span id="invitePartTwo">invited!</span></h1>
+        <h2>Tottenham Hotspur Premier League Champions<br> Award <br> Ceremony</h2>
         
-        <h2 id ="firstPost" class="header">First post</h2>
-        <h6>Posted on 6 Jan 2025</h6>
+        <h3>The Grosvenor Hotel,<br>London,<br> <span id="date">1st September 2026 7:30pm</span></h3>
+        <h4>The Marriot Grosvenor, London<br>86-90 Park Ln, London W1K 7TN</h4>
         
-        <ul>
-            <li id="firstPost" >joined code your future</li>
-            <li id="secondPost">started their ITD course</li>
-            <li id="thirdPost">as part of their ITD course, joined <a href="https://www.khanacademy.org/">Khan Academy</a></li>
-            <li>started the intro to HTML and CSS course</li>
-            <li>this blog is part of the course</li>
-            
-        </ul>
-        
+    
         
     </body>
 </html>
